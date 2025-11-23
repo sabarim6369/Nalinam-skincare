@@ -1,15 +1,15 @@
-# SSS Super Speciality Hospital - Website
+# Nalinam Skin and Hair Clinic - Website
 
 <div align="center">
 
-**Leading Multi-Speciality Hospital in Erode, Tamil Nadu**
+**Premier Dermatology Clinic in Salem, Tamil Nadu**
 
-[![Live Site](https://img.shields.io/badge/Live-ssshospitals.in-10b981?style=for-the-badge)](https://ssshospitals.in)
+[![Live Site](https://img.shields.io/badge/Live-nalinamclinic.com-10b981?style=for-the-badge)](https://nalinamclinic.com)
 [![React](https://img.shields.io/badge/React-19.1.1-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-7.1.2-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
 [![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?style=for-the-badge&logo=vercel)](https://vercel.com)
 
-[Features](#-features) • [Tech Stack](#-tech-stack) • [Getting Started](#-getting-started) • [Performance](#-performance) • [Contributing](#-contributing)
+[Features](#-features) • [Tech Stack](#-tech-stack) • [Getting Started](#-getting-started) • [Performance](#-performance) • [Contact](#-contact)
 
 </div>
 
@@ -26,24 +26,23 @@
 - [Development](#-development)
 - [Deployment](#-deployment)
 - [SEO & Analytics](#-seo--analytics)
-- [Security](#-security)
 - [Accessibility](#-accessibility)
-- [Contributing](#-contributing)
+- [Contact](#-contact)
 
 ---
 
 ## 🏥 About
 
-SSS Super Speciality Hospital's official website - A modern, high-performance web application showcasing our comprehensive healthcare services, medical departments, expert doctors, and facilities. Built with cutting-edge web technologies to provide the best user experience for patients and visitors.
+Nalinam Skin and Hair Clinic's official website - A modern, responsive web application showcasing our dermatology services, skin treatments, hair care solutions, and general medical consultations in Salem, Tamil Nadu. Built with cutting-edge web technologies to provide the best user experience for patients seeking quality dermatological care.
 
 ### Key Objectives
 
-- **Patient-Centric Design**: Easy navigation and appointment booking
+- **Patient-Centric Design**: Easy navigation and quick appointment booking
 - **Performance**: Lightning-fast load times (95+ Lighthouse score)
-- **Accessibility**: WCAG 2.1 AA compliant
-- **SEO Optimized**: Rich structured data and semantic HTML
-- **Mobile-First**: Responsive design for all devices
-- **Security**: Industry-standard security headers and practices
+- **Accessibility**: WCAG 2.1 AA compliant for all users
+- **SEO Optimized**: Rich structured data for better search visibility
+- **Mobile-First**: Seamless experience across all devices
+- **Secure**: Industry-standard security headers and best practices
 
 ---
 
@@ -54,17 +53,22 @@ SSS Super Speciality Hospital's official website - A modern, high-performance we
 - ⚡ **Instant Page Loads**: Advanced code splitting and lazy loading
 - 📱 **Fully Responsive**: Optimized for mobile, tablet, and desktop
 - 🎭 **Smooth Animations**: Framer Motion for delightful interactions
-- 🌙 **Progressive Web App**: Offline support with service worker
+- 🌐 **Progressive Web App**: Offline support with service worker
 - ♿ **Accessible**: Keyboard navigation, screen reader support
+- 🌍 **Local Focus**: Dedicated for Salem patients with easy directions
 
-### 🏥 **Healthcare Features**
+### 🏥 **Clinic Features**
 
-- 📅 **Online Appointment Booking**: Quick and easy appointment scheduling
-- 👨‍⚕️ **Doctor Profiles**: Detailed information about 50+ specialists
-- 🏢 **20+ Departments**: Comprehensive specialty coverage
-- 🛏️ **Room Gallery**: Virtual tour of facilities
-- 💬 **Patient Testimonials**: Real feedback from patients
-- 📞 **Quick Contact**: Click-to-call and WhatsApp integration
+- 📅 **Easy Appointment Booking**: Click-to-call and WhatsApp integration
+- 👨‍⚕️ **Expert Doctors**: Meet Dr. Tamil Kumar (MBBS, MD)
+- 💊 **Treatment Services**: 
+  - Skin Treatment (Acne, Pigmentation, Anti-aging)
+  - Hair Treatment (Hair Fall, Dandruff, Scalp Care)
+  - General Consultation (Fever, Common Ailments)
+  - Cosmetic Treatments (Chemical Peels, Facials)
+- 📍 **Location**: Salem, Tamil Nadu (Permanur)
+- 💬 **Patient Testimonials**: Real feedback from satisfied patients
+- 📞 **Quick Contact**: Direct call: 9790029573
 
 ### 🔧 **Technical Excellence**
 
@@ -74,7 +78,7 @@ SSS Super Speciality Hospital's official website - A modern, high-performance we
 - 🖼️ **AVIF Images**: Next-gen image format for 50% smaller files
 - 📊 **Analytics Integration**: Vercel Analytics & Speed Insights
 - 🛡️ **Security Headers**: CSP, HSTS, XSS protection
-- 🔐 **HIPAA Compliant**: Healthcare data protection standards
+- 🔐 **Data Protection**: Healthcare data privacy standards
 
 ---
 
@@ -101,9 +105,10 @@ SSS Super Speciality Hospital's official website - A modern, high-performance we
 ### **SEO & Analytics**
 
 - **Vercel Analytics**: Real-time visitor analytics
-- **Speed Insights**: Performance monitoring
-- **Structured Data**: JSON-LD schemas for Google
+- **Speed Insights**: Core Web Vitals monitoring
+- **Structured Data**: JSON-LD schemas (Medical Clinic, Local Business)
 - **Sitemap**: Auto-generated XML sitemap
+- **Meta Tags**: Open Graph, Twitter Cards
 
 ---
 
@@ -144,8 +149,8 @@ Our website achieves exceptional performance metrics:
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/Akilesh-programmer/SSS-Web.git
-cd SSS-Web
+git clone https://github.com/yourusername/Nalinam-skincare.git
+cd Nalinam-skincare/SSS-Web
 ```
 
 2. **Install dependencies**
@@ -160,7 +165,7 @@ npm install
 cp .env.example .env
 ```
 
-Edit `.env` with your configuration
+Edit `.env` with your configuration (if needed)
 
 4. **Start development server**
 
@@ -193,17 +198,19 @@ SSS-Web/
 ├── public/                   # Static assets
 │   ├── robots.txt
 │   ├── sitemap.xml
-│   ├── sw.js                 # Service worker
-│   └── assets/               # Images, icons
+│   └── assets/               # Images, logos
 ├── src/                      # Source code
 │   ├── main.jsx              # Application entry
 │   ├── App.jsx               # Root component
 │   ├── Components/           # React components
+│   │   ├── pages/            # Page components
+│   │   ├── sections/         # Section components
+│   │   └── ui/               # UI components
 │   ├── contexts/             # React contexts
-│   ├── data/                 # Static data
+│   ├── data/                 # Static data (testimonials, etc.)
 │   ├── hooks/                # Custom hooks
 │   └── utils/                # Utility functions
-└── scripts/                  # Build scripts
+└── README.md                 # This file
 ```
 
 ---
@@ -215,6 +222,7 @@ SSS-Web/
 - **JavaScript**: ES6+ features, functional components
 - **Styling**: TailwindCSS utility-first approach
 - **Components**: Small, reusable, single responsibility
+- **Naming**: Descriptive, camelCase for variables, PascalCase for components
 
 ### Best Practices
 
@@ -223,6 +231,7 @@ SSS-Web/
 3. Optimize images before adding
 4. Update SEO data for new pages
 5. Test accessibility with keyboard navigation
+6. Keep components under 300 lines
 
 ---
 
@@ -230,9 +239,9 @@ SSS-Web/
 
 ### Automatic Deployment (Vercel)
 
-- **Production**: Automatic on push to `main`
+- **Production**: Automatic on push to `main` branch
 - **Preview**: Automatic for pull requests
-- **Domain**: https://ssshospitals.in
+- **Domain**: https://nalinamclinic.com
 
 ### Manual Deployment
 
@@ -241,39 +250,42 @@ npm run build
 npm run deploy
 ```
 
+### Environment Variables
+
+Set these in Vercel dashboard:
+- `VITE_API_URL` (if using backend)
+- `VITE_ANALYTICS_ID` (if using custom analytics)
+
 ---
 
 ## 📊 SEO & Analytics
 
 ### SEO Features
 
-- ✅ Structured Data (Organization, LocalBusiness, Medical schemas)
+- ✅ Structured Data (Medical Clinic, Local Business schemas)
 - ✅ Dynamic Meta Tags (OG tags, Twitter Cards)
 - ✅ XML Sitemap with all pages
 - ✅ Robots.txt for proper crawling
 - ✅ Canonical URLs
 - ✅ Mobile-friendly design
+- ✅ Page titles optimized for keywords:
+  - "Skin Clinic Salem"
+  - "Dermatologist Salem"
+  - "Hair Treatment Salem"
+  - "Nalinam Clinic"
 
 ### Analytics
 
 - Vercel Analytics (built-in)
 - Google Search Console integration
 - Core Web Vitals tracking
+- Patient journey analytics
 
----
+### Target Keywords
 
-## 🔒 Security
-
-### Implemented Measures
-
-- ✅ HTTPS Only with HSTS
-- ✅ Content Security Policy (CSP)
-- ✅ XSS Protection headers
-- ✅ Frame protection (X-Frame-Options)
-- ✅ Input validation and sanitization
-- ✅ Rate limiting on forms
-
-See [SECURITY.md](SECURITY.md) for vulnerability reporting.
+- Primary: Nalinam Clinic, Skin Clinic Salem, Dermatologist Salem
+- Secondary: Hair Treatment Salem, Acne Treatment, Hair Fall Treatment
+- Local: Salem Skin Care, Permanur Clinic, Tamil Nadu Dermatology
 
 ---
 
@@ -282,43 +294,85 @@ See [SECURITY.md](SECURITY.md) for vulnerability reporting.
 ### WCAG 2.1 AA Compliance
 
 - ✅ Keyboard navigation support
-- ✅ Screen reader compatibility
+- ✅ Screen reader compatibility (ARIA labels)
 - ✅ Color contrast ratios (4.5:1 minimum)
-- ✅ Focus indicators
-- ✅ Alt text for images
+- ✅ Focus indicators on interactive elements
+- ✅ Alt text for all images
 - ✅ Semantic HTML structure
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Please:
-
-1. Fork the repository
-2. Create a feature branch
-3. Commit your changes
-4. Push to the branch
-5. Open a Pull Request
+- ✅ Skip to content links
+- ✅ Proper heading hierarchy
 
 ---
 
 ## 📞 Contact
 
-**SSS Super Speciality Hospital**
+**Nalinam Skin and Hair Clinic**
 
-- 🌐 Website: [ssshospitals.in](https://ssshospitals.in)
-- 📧 Email: info@ssshospitals.in
-- 📱 Phone: +91-424-2888777
-- 🚨 Emergency: +91-89259-31193
+- 🌐 Website: [nalinamclinic.com](https://nalinamclinic.com)
+- 📧 Email: contact.nalinam@gmail.com
+- 📱 Phone: +91 9790029573
+- 📍 Address: 39, Kamaraj Colony, Omalur Main Road, Permanur, Salem - 636 007
+- 💬 WhatsApp: +91 9790029573
+
+### Social Media
+
+- Facebook: [facebook.com/nalinamclinic](https://facebook.com/nalinamclinic)
+- Instagram: [@nalinamclinic](https://instagram.com/nalinamclinic)
+- YouTube: [youtube.com/@nalinamclinic](https://youtube.com/@nalinamclinic)
+
+---
+
+## 🏆 Our Services
+
+### Skin Treatment
+- Acne & Pimple Treatment
+- Pigmentation Removal
+- Anti-Aging Treatments
+- Skin Allergy Care
+- Chemical Peels
+- Facial Treatments
+
+### Hair Treatment
+- Hair Fall Solutions
+- Dandruff Treatment
+- Scalp Disorders
+- Hair Transplant Consultation
+- Hair Growth Treatments
+
+### General Consultation
+- Fever Treatment
+- Common Ailments
+- Health Checkups
+- Medical Consultations
+
+---
+
+## 👨‍⚕️ Our Team
+
+**Dr. Tamil Kumar** - MBBS, MD  
+Founder & Chief Physician  
+Specialized in Dermatology and General Medicine
+
+---
+
+## 🎯 Why Choose Nalinam Clinic?
+
+✅ Expert Dermatological Care  
+✅ Personalized Treatment Plans  
+✅ Modern Equipment & Techniques  
+✅ Clean & Hygienic Environment  
+✅ Affordable Pricing  
+✅ Convenient Salem Location  
+✅ 100+ Happy Patients  
 
 ---
 
 <div align="center">
 
-**Built with ❤️ for better healthcare accessibility**
+**Built with ❤️ for better skin and hair health in Salem**
 
-© 2025 SSS Super Speciality Hospital. All rights reserved.
+© 2025 Nalinam Skin and Hair Clinic. All rights reserved.
+
+[Book Appointment](tel:+919790029573) • [Get Directions](https://maps.google.com/?q=39+Kamaraj+Colony+Omalur+Main+Road+Permanur+Salem+636007)
 
 </div>
-#   N a l i n a m - s k i n c a r e  
- 
