@@ -130,15 +130,15 @@ const Contact = () => {
       icon: FaWhatsapp,
       title: "WhatsApp",
       subtitle: "Chat with us",
-      action: () => window.open("https://wa.me/919790029573"),
+      action: () => window.open("https://wa.me/919790029573?text=Hello, I would like to book an appointment at Nalinam Skin and Hair Clinic, Salem."),
       color:
         "bg-gradient-to-r from-green-100 to-emerald-200 hover:from-green-200 hover:to-emerald-300 text-green-700 hover:text-green-800",
     },
     {
       id: "location",
       icon: FaMapMarkerAlt,
-      title: "Directions",
-      subtitle: "Find us easily",
+      title: "Get Directions",
+      subtitle: "Find us in Salem",
       action: () => window.open("https://maps.google.com/?q=39+Kamaraj+Colony+Omalur+Main+Road+Permanur+Salem+636007"),
       color:
         "bg-gradient-to-r from-blue-100 to-indigo-200 hover:from-blue-200 hover:to-indigo-300 text-blue-700 hover:text-blue-800",

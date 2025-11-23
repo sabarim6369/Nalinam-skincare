@@ -18,37 +18,37 @@ const AboutUs = () => {
       icon: <FaUserMd className="text-3xl text-emerald-600" />,
       title: "Expert Dermatologists",
       description:
-        "Highly qualified skin and hair specialists dedicated to your wellness",
+        "Highly qualified skin and hair specialists with proven expertise",
     },
     {
       icon: <FaMicroscope className="text-3xl text-emerald-600" />,
-      title: "Advanced Treatments",
+      title: "Modern Treatments",
       description:
-        "Modern skin and hair care techniques with latest treatment protocols",
+        "Latest dermatology techniques and advanced treatment protocols",
     },
     {
       icon: <FaHospital className="text-3xl text-emerald-600" />,
-      title: "Clean & Comfortable Clinic",
+      title: "Clean Clinic Environment",
       description:
-        "Hygienic and welcoming environment designed for your comfort",
+        "Hygienic and comfortable setting for your peace of mind",
     },
     {
       icon: <FaStethoscope className="text-3xl text-emerald-600" />,
-      title: "Personalized Care",
+      title: "Personalized Treatment",
       description:
-        "Individual treatment plans tailored to your specific skin and hair needs",
+        "Customized care plans for your unique skin and hair concerns",
     },
     {
       icon: <FaClock className="text-3xl text-emerald-600" />,
-      title: "Convenient Timings",
+      title: "Flexible Timings",
       description:
-        "Flexible appointment schedules to accommodate your busy lifestyle",
+        "Convenient appointments to fit your busy schedule",
     },
     {
       icon: <FaHandHoldingMedical className="text-3xl text-emerald-600" />,
-      title: "Affordable Treatment",
+      title: "Affordable Care",
       description:
-        "Quality dermatological care at reasonable prices for everyone",
+        "Quality dermatology services at transparent, reasonable prices",
     },
   ];
 

@@ -14,7 +14,7 @@ import {
   FaCut,
   FaSpa,
 } from "react-icons/fa";
-const hospitalImg = "/assets/other/other-sss-hospital.avif";
+const hospitalImg = "/assets/other/clinic.jpg";
 import PropTypes from "prop-types";
 
 // Small counter component that animates from 0 -> end when `start` becomes true
@@ -138,7 +138,7 @@ export default function Home() {
                   <FaHeartbeat className="text-emerald-600 text-lg lg:text-xl heart-pulse-red" />
                 </div>
                 <span className="text-emerald-600 font-semibold text-base lg:text-lg">
-                  Your Skin & Hair, Our Expertise
+                  Your Skin & Hair Care Experts
                 </span>
               </motion.div>
 
@@ -149,9 +149,9 @@ export default function Home() {
                 transition={{ delay: 0.4, duration: 0.8 }}
                 className="text-display-xl text-gray-900 text-center lg:text-left"
               >
-                Expert Skin & Hair Care,{" "}
+                Expert Dermatology,{" "}
                 <span className="text-emerald-600 relative">
-                  Close to Home
+                  Right in Salem
                   <motion.div
                     initial={{ scaleX: 0 }}
                     animate={{ scaleX: 1 }}
@@ -169,7 +169,7 @@ export default function Home() {
                 className="text-lg lg:text-xl text-gray-600 leading-relaxed max-w-lg mx-auto lg:mx-0 px-4 lg:px-0"
                 style={{ textAlign: "justify" }}
               >
-                Experience comprehensive skin and hair treatments with personalized care at Nalinam Skin and Hair Clinic, Salem. We also provide general medical consultations.
+                Comprehensive skin, hair, and general healthcare with personalized treatment plans at Nalinam Clinic, Salem's trusted dermatology center.
               </motion.p>
 
               {/* Trust indicators */}
@@ -202,7 +202,7 @@ export default function Home() {
                   </div>
                   <p className="text-heading-md text-gray-900">Open</p>
                   <p className="text-xs lg:text-sm text-gray-600">
-                    Daily Care
+                    6 Days
                   </p>
                 </div>
               </motion.div>
@@ -226,7 +226,7 @@ export default function Home() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-black/5 to-transparent"></div>
 
-                {/* Floating stats card (moved slightly more left & down) */}
+                {/* Floating stats card */}
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -234,7 +234,7 @@ export default function Home() {
                   className="absolute bottom-2 left-1 lg:bottom-3 lg:left-2 bg-white/95 backdrop-blur-sm rounded-lg p-2 lg:p-3 shadow"
                 >
                   <p className="text-emerald-600 font-semibold text-[10px] lg:text-xs">
-                    Trusted Clinic in Salem
+                    Salem's Trusted Skin Clinic
                   </p>
 
                   <div className="mt-1 flex items-baseline gap-2">
@@ -247,7 +247,7 @@ export default function Home() {
                       />
                     </div>
                     <div className="text-gray-900 font-semibold text-sm lg:text-sm">
-                      Happy Patients
+                      Satisfied Patients
                     </div>
                   </div>
                 </motion.div>

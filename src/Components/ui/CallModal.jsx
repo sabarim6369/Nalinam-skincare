@@ -6,10 +6,10 @@ import { createPortal } from "react-dom";
 const CallModal = ({
   isOpen,
   onClose,
-  title = "Contact SSS Hospital",
-  primaryNumber = "0424 - 2888777",
-  secondaryNumber = "+91 7729 888777",
-  whatsappNumber = "+91 7729 888777",
+  title = "Contact Nalinam Clinic",
+  primaryNumber = "9790029573",
+  secondaryNumber = "+91 9790029573",
+  whatsappNumber = "+91 9790029573",
 }) => {
   const formatPhoneNumber = (number) => number.replace(/[^0-9+]/g, "");
 
@@ -93,7 +93,7 @@ const CallModal = ({
               <a
                 href={`https://wa.me/${formatPhoneNumber(
                   whatsappNumber
-                )}?text=Hello, I would like to book an appointment at Nalinam Skin and Hair Clinic.`}
+                )}?text=Hello, I would like to book an appointment at Nalinam Skin and Hair Clinic, Salem.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={onClose}
@@ -116,7 +116,7 @@ const CallModal = ({
             {/* Footer */}
             <div className="mt-6 pt-4 border-t border-slate-100">
               <p className="text-body-xs text-slate-400 text-center">
-                Open daily for your skin, hair, and general health needs
+                Open daily • Skin, Hair & General Healthcare
               </p>
             </div>
           </motion.div>

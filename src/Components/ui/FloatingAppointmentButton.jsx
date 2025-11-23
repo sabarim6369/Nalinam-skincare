@@ -67,9 +67,9 @@ const FloatingAppointmentButton = () => {
         isOpen={isCallModalOpen}
         onClose={() => setIsCallModalOpen(false)}
         title="Book Appointment"
-        primaryNumber="0424 - 2888777"
-        secondaryNumber="+91 7729 888777"
-        whatsappNumber="+91 7729 888777"
+        primaryNumber="9790029573"
+        secondaryNumber="+91 9790029573"
+        whatsappNumber="+91 9790029573"
       />
     </>
   );
