@@ -217,130 +217,58 @@ export const applyMetaTags = (metaTags) => {
 /**
  * Generate JSON-LD structured data for organization
  */
-export const generateOrganizationSchema = () => {
-  return {
-    "@context": "https://schema.org",
-    "@type": "MedicalOrganization",
-    "@id": `${SITE_CONFIG.url}/#organization`,
-    name: SITE_CONFIG.name,
-    alternateName: SITE_CONFIG.shortName,
-    url: SITE_CONFIG.url,
-    logo: {
-      "@type": "ImageObject",
-      url: SITE_CONFIG.logo,
-      width: 512,
-      height: 512,
-    },
-    image: SITE_CONFIG.image,
-    description: SITE_CONFIG.description,
-    email: SITE_CONFIG.email,
-    telephone: SITE_CONFIG.phone,
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: SITE_CONFIG.address.street,
-      addressLocality: SITE_CONFIG.address.city,
-      addressRegion: SITE_CONFIG.address.state,
-      postalCode: SITE_CONFIG.address.postalCode,
-      addressCountry: SITE_CONFIG.address.country,
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: SITE_CONFIG.coordinates.latitude,
-      longitude: SITE_CONFIG.coordinates.longitude,
-    },
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday",
-      ],
-      opens: "00:00",
-      closes: "23:59",
-    },
-    sameAs: Object.values(SITE_CONFIG.social),
-    contactPoint: [
-      {
-        "@type": "ContactPoint",
-        telephone: SITE_CONFIG.phone,
-        contactType: "customer service",
-        availableLanguage: ["English", "Tamil", "Hindi"],
-        areaServed: "IN",
-      },
-      {
-        "@type": "ContactPoint",
-        telephone: SITE_CONFIG.emergencyPhone,
-        contactType: "emergency",
-        availableLanguage: ["English", "Tamil", "Hindi"],
-        areaServed: "IN",
-      },
-    ],
-    foundingDate: SITE_CONFIG.established,
-    medicalSpecialty: MEDICAL_KEYWORDS.specialities,
-    availableService: MEDICAL_KEYWORDS.services.map((service) => ({
-      "@type": "MedicalProcedure",
-      name: service,
-    })),
-    hasCredential: {
-      "@type": "EducationalOccupationalCredential",
-      credentialCategory: "Medical License",
-    },
-    acceptsHealthInsurance: SITE_CONFIG.acceptsHealthInsurance,
-  };
-};
+export const generateOrganizationSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  name: "Nalinam Skin and Hair Clinic",
+  description: "Expert dermatology clinic in Salem offering skin treatment, hair care, and general medical services.",
+  url: "https://www.nalinamclinic.com",
+  telephone: "+919790029573",
+  email: "contact.nalinam@gmail.com",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "39, Kamaraj Colony, Omalur Main Road, Permanur",
+    addressLocality: "Salem",
+    addressRegion: "Tamil Nadu",
+    postalCode: "636007",
+    addressCountry: "IN",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "11.664325",
+    longitude: "78.146011",
+  },
+  openingHours: "Mo-Su",
+  priceRange: "$$",
+  medicalSpecialty: ["Dermatology", "Trichology"],
+});
 
 /**
  * Generate JSON-LD structured data for local business
  */
-export const generateLocalBusinessSchema = () => {
-  return {
-    "@context": "https://schema.org",
-    "@type": "Hospital",
-    "@id": `${SITE_CONFIG.url}/#hospital`,
-    name: SITE_CONFIG.name,
-    url: SITE_CONFIG.url,
-    logo: SITE_CONFIG.logo,
-    image: SITE_CONFIG.image,
-    description: SITE_CONFIG.description,
-    telephone: SITE_CONFIG.phone,
-    email: SITE_CONFIG.email,
-    priceRange: "₹₹",
-    address: {
-      "@type": "PostalAddress",
-      streetAddress: SITE_CONFIG.address.street,
-      addressLocality: SITE_CONFIG.address.city,
-      addressRegion: SITE_CONFIG.address.state,
-      postalCode: SITE_CONFIG.address.postalCode,
-      addressCountry: SITE_CONFIG.address.country,
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: SITE_CONFIG.coordinates.latitude,
-      longitude: SITE_CONFIG.coordinates.longitude,
-    },
-    openingHoursSpecification: {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday",
-      ],
-      opens: "00:00",
-      closes: "23:59",
-    },
-    hasMap: "https://maps.app.goo.gl/2xkTddYbxgtg8dec7",
-    isAccessibleForFree: false,
-    publicAccess: true,
-  };
-};
+export const generateLocalBusinessSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Nalinam Skin and Hair Clinic",
+  image: "https://www.nalinamclinic.com/assets/logos/full-logo.avif",
+  "@id": "https://www.nalinamclinic.com",
+  url: "https://www.nalinamclinic.com",
+  telephone: "+919790029573",
+  priceRange: "$$",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "39, Kamaraj Colony, Omalur Main Road, Permanur",
+    addressLocality: "Salem",
+    addressRegion: "Tamil Nadu",
+    postalCode: "636007",
+    addressCountry: "IN",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "11.664325",
+    longitude: "78.146011",
+  },
+});
 
 /**
  * Generate breadcrumb schema
@@ -548,26 +476,24 @@ export const generateArticleSchema = (article) => {
 /**
  * Generate Appointment Schema for booking
  */
-export const generateAppointmentSchema = () => {
-  return {
-    "@context": "https://schema.org",
-    "@type": "MedicalBusiness",
-    name: SITE_CONFIG.name,
-    url: SITE_CONFIG.url,
-    potentialAction: {
-      "@type": "ReserveAction",
-      target: {
-        "@type": "EntryPoint",
-        urlTemplate: `${SITE_CONFIG.url}/contact`,
-        actionPlatform: [
-          "http://schema.org/DesktopWebPlatform",
-          "http://schema.org/MobileWebPlatform",
-        ],
-      },
-      result: {
-        "@type": "Reservation",
-        name: "Medical Appointment",
-      },
+export const generateAppointmentSchema = () => ({
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  name: "Nalinam Skin and Hair Clinic",
+  telephone: "+919790029573",
+  url: "https://www.nalinamclinic.com/contact",
+  availableService: [
+    {
+      "@type": "MedicalProcedure",
+      name: "Skin Treatment",
     },
-  };
-};
+    {
+      "@type": "MedicalProcedure",
+      name: "Hair Treatment",
+    },
+    {
+      "@type": "MedicalProcedure",
+      name: "General Consultation",
+    },
+  ],
+});

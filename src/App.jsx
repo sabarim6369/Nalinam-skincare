@@ -80,7 +80,7 @@ const AboutPage = () => {
         {...PAGE_SEO.about}
         breadcrumbs={[
           { name: "Home", url: "/" },
-          { name: "About Us", url: "/about" },
+          { name: "About Nalinam Clinic", url: "/about" },
         ]}
       />
       <Suspense fallback={<LoadingFallback />}>
@@ -91,7 +91,7 @@ const AboutPage = () => {
   );
 };
 
-// Specialities Page - All specialities and departments
+// Specialities Page - All specialities and services
 const SpecialitiesPage = () => {
   return (
     <PageWrapper>
@@ -110,7 +110,7 @@ const SpecialitiesPage = () => {
   );
 };
 
-// Services Page - All medical services
+// Services Page - All clinic services
 const ServicesPage = () => {
   return (
     <PageWrapper>
@@ -129,7 +129,7 @@ const ServicesPage = () => {
   );
 };
 
-// Packages Page - Health checkup packages
+// Packages Page - Treatment packages
 const PackagesPage = () => {
   return (
     <PageWrapper>
@@ -148,7 +148,7 @@ const PackagesPage = () => {
   );
 };
 
-// Doctors Page - All doctors and medical team
+// Doctors Page - Our medical team
 const DoctorsPageWrapper = () => {
   return (
     <PageWrapper>
@@ -156,7 +156,7 @@ const DoctorsPageWrapper = () => {
         {...PAGE_SEO.doctors}
         breadcrumbs={[
           { name: "Home", url: "/" },
-          { name: "Doctors", url: "/doctors" },
+          { name: "Our Doctors", url: "/doctors" },
         ]}
       />
       <Suspense fallback={<LoadingFallback />}>
@@ -167,7 +167,7 @@ const DoctorsPageWrapper = () => {
   );
 };
 
-// Contact Page - Enhanced contact information and appointment booking
+// Contact Page - Enhanced contact information
 const ContactPage = () => {
   return (
     <PageWrapper>
@@ -175,7 +175,7 @@ const ContactPage = () => {
         {...PAGE_SEO.contact}
         breadcrumbs={[
           { name: "Home", url: "/" },
-          { name: "Contact", url: "/contact" },
+          { name: "Contact Us", url: "/contact" },
         ]}
         schema={generateAppointmentSchema()}
       />
@@ -187,7 +187,7 @@ const ContactPage = () => {
   );
 };
 
-// Infrastructure/Gallery Page - Hospital infrastructure showcase
+// Infrastructure/Gallery Page - Clinic infrastructure
 const InfrastructurePage = () => {
   return (
     <PageWrapper>
@@ -195,7 +195,7 @@ const InfrastructurePage = () => {
         {...PAGE_SEO.infrastructure}
         breadcrumbs={[
           { name: "Home", url: "/" },
-          { name: "Infrastructure", url: "/infrastructure" },
+          { name: "Our Clinic", url: "/infrastructure" },
         ]}
       />
       <Suspense fallback={<LoadingFallback />}>

@@ -1,5 +1,5 @@
 import { useRef, useEffect, useState } from "react";
-const logoFullLocal = "/assets/logos/sss-full-logo.avif";
+const logoFullLocal = "/assets/logos/logo2.png";
 const logoFull = logoFullLocal;
 import PropTypes from "prop-types";
 import {
@@ -86,9 +86,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6 lg:gap-8">
           {/* Clinic Info - Enhanced */}
           <div className="lg:col-span-4">
-            {/* Centered Logo Only */}
+            {/* Centered Logo Only - Increased Size */}
             <div className="flex items-center justify-center mb-4">
-              <div className="w-48 h-24 md:w-56 md:h-28 rounded-lg bg-white p-2 flex items-center justify-center shadow-lg">
+              <div className="w-64 h-32 md:w-72 md:h-36 rounded-lg bg-white p-3 flex items-center justify-center shadow-lg">
                 <img
                   src={logoFull}
                   alt="Nalinam Skin and Hair Clinic Logo"

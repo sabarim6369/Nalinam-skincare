@@ -3,9 +3,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { useAppointment } from "../../contexts/AppointmentContext";
 import CallModal from "./CallModal";
-const sssLogoLocal = "/assets/logos/sss-logo.avif";
+const sssLogoLocal = "/assets/logos/nalinam.jpeg";
 const sssLogo = sssLogoLocal;
-const logoFullLocal = "/assets/logos/full-logo.avif";
+const logoFullLocal = "/assets/logos/logo2.png";
 const logoFull = logoFullLocal;
 import { FaBars, FaTimes, FaAmbulance, FaCalendarPlus } from "react-icons/fa";
 
@@ -229,7 +229,7 @@ const Navigation = () => {
         {/* Full-width container with minimal side padding */}
         <div className="max-w-[1920px] mx-auto px-2 sm:px-3 lg:px-4 xl:px-6 2xl:px-8">
           <div className="flex items-center justify-between h-14 sm:h-16 xl:h-[4.5rem]">
-            {/* Professional Logo Section - Constrained Size */}
+            {/* Professional Logo Section - Maximum Size */}
             <motion.div
               className="flex items-center cursor-pointer relative group shrink-0"
               onClick={() => handleNavigation("/")}
@@ -242,9 +242,9 @@ const Navigation = () => {
               <img
                 src={logoFull}
                 alt="Nalinam Skin and Hair Clinic"
-                width="200"
-                height="86"
-                className="relative h-8 sm:h-9 md:h-10 lg:h-11 xl:h-12 2xl:h-14 w-auto max-w-[140px] sm:max-w-[160px] lg:max-w-[180px] xl:max-w-[200px] object-contain select-none"
+                width="350"
+                height="150"
+                className="relative h-20 sm:h-24 md:h-28 lg:h-28 xl:h-32 2xl:h-36 w-auto max-w-[240px] sm:max-w-[280px] lg:max-w-[300px] xl:max-w-[350px] object-contain select-none"
                 loading="eager"
                 fetchpriority="high"
               />
