@@ -135,8 +135,8 @@ const doc29 = "/assets/doctors/doctor-28.avif";
 export const doctors = [
   {
     id: 1,
-    name: "Dr. S. Sanjith",
-    specialty: "Dermatology & Cosmetology",
+    name: "Dr. S. Tamil Kumar",
+    specialty: "Dermatology",
     designation: "Founder & Managing Director, Consultant Dermatologist",
     department: [5],
     qualification: "MD (DERM)",
